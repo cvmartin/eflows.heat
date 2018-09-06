@@ -1,9 +1,20 @@
 Package: eflows.heat
-Title: What the Package Does (one line, title case)
+Type: Package
+Title: heat functions for eflows core
 Version: 0.0.0.9000
-Authors@R: person("First", "Last", email = "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
+Authors@R: person("Carlos", "Varela Martin", email = "cvarelamail@gmail.com",
+    role = c("aut", "cre"))
+Description: Toolbox of heat related functions to expand over the 
+    energy systems simulation and steering eflows.
 Depends: R (>= 3.3.2)
-License: What license is it under?
+Imports: zoo, 
+    xts,
+    magrittr,
+    Rcpp
+License: GPL-3 + file LICENSE
 Encoding: UTF-8
 LazyData: true
+LinkingTo: Rcpp
+URL: https://github.com/cvmartin/eflows.heat
+BugReports: https://github.com/cvmartin/eflows.heat/issues
+RoxygenNote: 6.0.1
