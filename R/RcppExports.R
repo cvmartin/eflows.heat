@@ -3,13 +3,13 @@
 
 #' Generate predictions of inside temperature
 #'
-#' @param input_vct List or DF of vectorized input parameters.
-#' @param input_ind List or DF of parameters with length one.
+#' @param input_vct List or DF of vectorized input parameters. `t_out`, `heat_gain`.
+#' @param input_ind List or DF of parameters with length one `init_t_room`.
 #' @param hloss heat loss of the building.
 #' @param sheat specific heat of the building.
 #' @param expand more detailed resuts.
 #' @export
 heat_model <- function(input_vct, input_ind, hloss, sheat, expand = FALSE) {
-    .Call('_eflows_heat_heat_model', PACKAGE = 'eflows.heat', input_vct, input_ind, hloss, sheat, expand)
+    .Call(`_eflows_heat_heat_model`, input_vct, input_ind, hloss, sheat, expand)
 }
 

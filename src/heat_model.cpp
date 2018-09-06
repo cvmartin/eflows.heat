@@ -3,8 +3,8 @@ using namespace Rcpp;
 
 //' Generate predictions of inside temperature
 //'
-//' @param input_vct List or DF of vectorized input parameters.
-//' @param input_ind List or DF of parameters with length one.
+//' @param input_vct List or DF of vectorized input parameters. `t_out`, `heat_gain`.
+//' @param input_ind List or DF of parameters with length one `init_t_room`.
 //' @param hloss heat loss of the building.
 //' @param sheat specific heat of the building.
 //' @param expand more detailed resuts.

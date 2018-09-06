@@ -7,9 +7,9 @@
 heat_model(input_vct, input_ind, hloss, sheat, expand = FALSE)
 }
 \arguments{
-\item{input_vct}{List or DF of vectorized input parameters.}
+\item{input_vct}{List or DF of vectorized input parameters. `t_out`, `heat_gain`.}
 
-\item{input_ind}{List or DF of parameters with length one.}
+\item{input_ind}{List or DF of parameters with length one `init_t_room`.}
 
 \item{hloss}{heat loss of the building.}
 
